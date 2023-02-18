@@ -1,0 +1,7 @@
+.popup__form {
+  margin: 0 auto;
+ 
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+}

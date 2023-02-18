@@ -1,0 +1,8 @@
+.element__info {
+  margin: 25px 15px 31px 21px ;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  max-width: 246px;
+}

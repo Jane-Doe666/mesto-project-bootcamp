@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Document</title>
+</head>
+<body class="page">
+
+  <section class="header">
+    <img src="./image/Vectorlogo.svg" alt="логотип" class="header__logo">
+  </section>
+
+  <section class="main">
+    <section class="profile">
+      <img src="./image/image.png" alt="аватар" class="profile__avatar">
+      <div class="profile__info">
+        <div class="profile__info-edit">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button class="profile__button-edit pointer"><img src="./image/EditButtoneditbutton.svg" alt="кнопка_редактор" class="profile__button-edit-img"></button>
+        </div>
+        <p class="profile__position">Исследователь океана</p>
+      </div>
+      <button class="profile__button-add pointer"><img src="./image/VectorvectorAdd.svg" alt="кнопка_добавить" class="profile__button-add-img"></button>
+    </section>
+
+    <section class="elements">
+      <ul class="elements__list">
+        <li class="element">
+          <img src="./image/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Карачаевск</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+        <li class="element">
+          <img src="./image/kirill-pershin-1404681-unsplash2.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Гора Эльбрус</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+        <li class="element">
+          <img src="./image/kirill-pershin-1556355-unsplash3.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Домбай</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+        <li class="element">
+          <img src="./image/kirill-pershin-1404681-unsplash4.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Гора Эльбрус</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+        <li class="element">
+          <img src="./image/kirill-pershin-1556355-unsplash5.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Домбай</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+        <li class="element">
+          <img src="./image/kirill-pershin-1088404-unsplash6.png" alt="Карачаевск" class="element__img">
+          <div class="element__info">
+            <h2 class="element__name">Карачаево-Ч...</h2>
+            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+          </div>
+        </li>
+      </ul>
+    </section>
+  </section>
+  <section class="footer">
+    <p class="footer__name">© 2020 Mesto Russia</p>
+  </section>
+    
+    <section class="popup popup_opened">
+      <img src="./image/Close-Icon-cross.svg" alt="крестик_закрывающий" class="popup__close pointer">
+      <div class="popup__container">
+        <form action="http" class="popup__form">
+          <h2 class="popup__header">Редактировать профиль</h2>
+          <input type="text" class="popup__field" name="fullname" value="Жак-Ив Кусто">
+          <input type="text" class="popup__field" name="profession" value="Исследователь океана">
+          <button type="submit" class="popup__button-submit">Сохранить</button>
+        </form>
+      </div>
+    </section>
+
+</body>
+</html>

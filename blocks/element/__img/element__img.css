@@ -1,0 +1,6 @@
+.element__img {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+  object-fit: cover;
+}
