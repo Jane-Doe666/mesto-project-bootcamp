@@ -1,0 +1,14 @@
+/* .popup__figure-container {
+  margin: auto;
+} */
+
+@media screen and (max-width: 1170px) {
+  .popup__figure-container {
+    margin: auto;
+  }
+}
+
+
+
+
+

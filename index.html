@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>Document</title>
+  <title>Место</title>
 </head>
 <body class="page">
 
@@ -13,81 +13,156 @@
     <img src="./image/Vectorlogo.svg" alt="логотип" class="header__logo">
   </section>
 
-  <section class="main">
+  <main class="main">
     <section class="profile">
       <img src="./image/image.png" alt="аватар" class="profile__avatar">
       <div class="profile__info">
         <div class="profile__info-edit">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__button-edit pointer"><img src="./image/EditButtoneditbutton.svg" alt="кнопка_редактор" class="profile__button-edit-img"></button>
+          <button class="profile__button-edit pointer" type="submit" aria-label="Редактировать">
+              <img src="./image/EditButtoneditbutton.svg" alt="кнопка_редактор" class="profile__button-edit-img">
+          </button>
         </div>
         <p class="profile__position">Исследователь океана</p>
       </div>
-      <button class="profile__button-add pointer"><img src="./image/VectorvectorAdd.svg" alt="кнопка_добавить" class="profile__button-add-img"></button>
+      <button class="profile__button-add pointer" type="submit" aria-label="добавить">
+          <img src="./image/VectorvectorAdd.svg" alt="кнопка_добавить" class="profile__button-add-img">
+      </button>
     </section>
 
     <section class="elements">
       <ul class="elements__list">
         <li class="element">
           <img src="./image/kirill-pershin-1088404-unsplash.png" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="submit"></div></button>
           <div class="element__info">
             <h2 class="element__name">Карачаевск</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
         <li class="element">
+          
           <img src="./image/kirill-pershin-1404681-unsplash2.png" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="submit"></div></button>
           <div class="element__info">
             <h2 class="element__name">Гора Эльбрус</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
         <li class="element">
           <img src="./image/kirill-pershin-1556355-unsplash3.png" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="submit"></div></button>
           <div class="element__info">
             <h2 class="element__name">Домбай</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/kirill-pershin-1404681-unsplash4.png" alt="Карачаевск" class="element__img">
+          <img src="./image/kirill-pershin-1404681-unsplash4.png" type="submit" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="button"></div></button>
           <div class="element__info">
             <h2 class="element__name">Гора Эльбрус</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
         <li class="element">
           <img src="./image/kirill-pershin-1556355-unsplash5.png" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="submit"></div></button>
           <div class="element__info">
             <h2 class="element__name">Домбай</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
         <li class="element">
           <img src="./image/kirill-pershin-1088404-unsplash6.png" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="submit"></div></button>
           <div class="element__info">
             <h2 class="element__name">Карачаево-Ч...</h2>
-            <img src="./image/Vectorheart.svg" alt="срдечко-лайк" class="element__like pointer active">
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
           </div>
         </li>
       </ul>
     </section>
-  </section>
+  </main>
   <section class="footer">
     <p class="footer__name">© 2020 Mesto Russia</p>
   </section>
     
-    <section class="popup popup_opened">
-      <img src="./image/Close-Icon-cross.svg" alt="крестик_закрывающий" class="popup__close pointer">
+  <section class="popup popup_info">
       <div class="popup__container">
-        <form action="http" class="popup__form">
+        <form action="#" class="popup__form">
+          <button 
+            class="popup__close popup__close_info pointer" type="submit">
+            <div class="popup__cross-img"></div>
+          </button>
           <h2 class="popup__header">Редактировать профиль</h2>
-          <input type="text" class="popup__field" name="fullname" value="Жак-Ив Кусто">
-          <input type="text" class="popup__field" name="profession" value="Исследователь океана">
+          <input 
+            type="text" 
+            class="popup__field popup__field_name" 
+            name="fullname" 
+            placeholder="имя" required>
+          <input 
+            type="text" 
+            class="popup__field popup__field_profession" 
+            name="profession"
+            placeholder="профессия" required>
           <button type="submit" class="popup__button-submit">Сохранить</button>
         </form>
       </div>
     </section>
+
+    <section class="popup popup_place">
+      <div class="popup__container popup__container_place">
+        <form action="#" class="popup__form popup__form_place">
+          <button 
+            class="popup__close popup__close_place pointer" type="button">
+            <div class="popup__cross-img"></div>
+          </button>
+          <h2 class="popup__header">Новое место</h2>
+          <input 
+            type="text" 
+            class="popup__field popup__field_picName" 
+            name="fullname" 
+            placeholder="Название">
+          <input 
+            type="text" 
+            class="popup__field popup__field_link" 
+            name="profession"
+            placeholder="Ссылка на картинку">
+          <button type="submit" class="popup__button-submit">Создать</button>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="popup popup_picture">
+      <div class="popup__container popup__container_picture">
+
+          <button 
+            class="popup__close popup__close_picture pointer" type="submit">
+            <div class="popup__cross-img"></div>
+          </button>
+          <figure class="popup__figure-container">
+            <img src="#" alt="" class="popup__figure-img">
+            <figcaption class="popup__figcaption">inseart</figcaption>
+          </figure>
+
+      </div>
+    </section>
+
+      <template id="element">
+        <li class="element">
+          <img src="./image/kirill-pershin-1404681-unsplash4.png" type="submit" alt="Карачаевск" class="element__img">
+          <button class="element__button-delete pointer" type="button"></div></button>
+          <div class="element__info">
+            <h2 class="element__name">Гора Эльбрус</h2>
+            <button class="element__button-like" type="submit"><div class="element__like-img"></div></button>
+          </div>
+        </li>
+      </template>
+
+
+    <script src="index.js"></script>
 
 </body>
 </html>

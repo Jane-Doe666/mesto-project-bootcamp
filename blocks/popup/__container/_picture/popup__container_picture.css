@@ -1,0 +1,14 @@
+.popup__container_picture {
+  background-color: transparent;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1170px) {
+  .popup__container_picture {
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+

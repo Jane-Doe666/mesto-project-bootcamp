@@ -1,17 +1,20 @@
 .popup__close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: black;
   position: absolute;
-  margin-top: 155px; 
-  margin-left: 863px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -40px;
+  right: -40px;
 }
 
 @media screen and (max-width: 1170px) {
   .popup__close {
     width: 20px;
-    margin-top: 87px; 
-    margin-left: 281px;
+    height: 20px;
+    top: -35px;
+    right: -23px;
   }
 }

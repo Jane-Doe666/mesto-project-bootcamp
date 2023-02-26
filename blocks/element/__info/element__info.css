@@ -1,5 +1,6 @@
 .element__info {
-  margin: 25px 15px 31px 21px ;
+  box-sizing: border-box;
+  margin: 25px 15px 25px 21px ;
   padding: 0;
   border: 0;
   display: flex;

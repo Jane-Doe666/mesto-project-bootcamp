@@ -1,0 +1,25 @@
+.element__like-img::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background-image: url(../../../image/Vectorheart.svg);
+  top: 0;
+  left: 0;
+  background-size: cover;
+  
+}
+
+.element__like-img:hover::before {
+  opacity: 0.5;
+}
+
+.element__like-img_active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: url(../../../image/UnionblackHeart.svg);
+  top: 0;
+  left: 0;
+  background-size: contain;
+}

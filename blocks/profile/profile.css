@@ -1,6 +1,6 @@
 .profile {
   box-sizing: border-box;
-  margin: 40px 200px 0px 200px;
+  margin: 40px auto 0px auto;
   max-width: 880px;
   display: flex;
   flex-direction: row;

@@ -7,6 +7,10 @@
   font-size: 18px;
   line-height: 22px;
 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
   color: #FFFFFF;
 }
 

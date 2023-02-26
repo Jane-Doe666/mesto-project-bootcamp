@@ -1,0 +1,12 @@
+.element__button-like {
+  margin: 0 5px 0 auto;
+  padding: 0;
+
+  cursor: pointer;
+  border: none;
+  width: 22px;
+  height: 19px;
+  position: relative;
+  background-color: white;
+  align-self: center;
+}
