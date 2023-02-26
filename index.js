@@ -51,26 +51,14 @@ function createCard (link, name) {
   const newCard = templateCard.querySelector('.element').cloneNode(true);
   newCard.querySelector('.element__img').src = link;
   newCard.querySelector('.element__name').textContent = name;
+  newCard.querySelector('.element__img').alt = name;
   containerOfPictures.prepend(newCard)
   closePopup(popupAddPic);
 }
 
-function deleteCard (e) {
-  if (e.target.closest('.element__button-delete')) {
-    const elem = e.target.closest('.element');
-    console.log(1, elem);
-    elem.remove()
-  }
+function deleteCard (elem) {
+  elem.remove()
 }
-
-function setPopupBigPicture(item) {
-  const cardName = item.querySelector('.element__name');
-  const cardLink = item.querySelector('.element__img');
-  
-  popupFigcaptionName.textContent = cardName.textContent;
-  popupFigcaptionSrc.src = cardLink.src;
-  popupFigcaptionSrc.alt = cardName.textContent;
-};
 
 function updateCardsListFromWeb (cardList) {
   const initialCards = [
@@ -115,6 +103,15 @@ function addLike (e) {
   like.classList.toggle('element__like-img_active');
 };
 
+function setPopupBigPicture(element) {
+  const cardName = element.querySelector('.element__name');
+  const cardLink = element.querySelector('.element__img');
+  popupFigcaptionSrc.src = cardLink.src;
+  popupFigcaptionName.textContent = cardName.textContent;
+  popupFigcaptionSrc.alt = cardName.textContent;
+  openPopup(popupPicture);
+};
+
 updateCardsListFromWeb(elementsList);
 
 buttonAddPic.addEventListener('click', ()=>{
@@ -145,13 +142,10 @@ popupsList.forEach(item => {
   item.addEventListener('mousedown', closeOverModalWindow);
 });
 
-containerOfPictures.addEventListener('click', addLike);
-
-containerOfPictures.addEventListener('click', deleteCard);
-
 containerOfPictures.addEventListener('click', (e) => {
-  const card = e.target.closest('.element')
-  openPopup(popupPicture);
-  setPopupBigPicture(card)
+  const element = e.target.closest('.element');
+  if (e.target.closest('.element__button-like')) addLike(e);
+  if (e.target.closest('.element__button-delete')) deleteCard(element);
+  if (e.target.closest('.element__img')) setPopupBigPicture(element);
 });
 
