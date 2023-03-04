@@ -7,11 +7,17 @@
   grid-template-columns: repeat(3, minmax(282px, 1fr));
   column-gap: 17px;
   row-gap: 20px;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 940px) {
+  .elements__list {
+    grid-template-columns: repeat(2, 282px);
+  }
+}
+
+@media screen and (max-width: 800px) {
   .elements__list {
     grid-template-columns: repeat(1, 282px);
-    column-gap: 0;
   }
 }

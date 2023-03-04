@@ -1,6 +1,5 @@
 .footer__name {
-  margin: 0 200px 0;
-  max-width: 318px;
+  margin: auto;
 
   font-style: normal;
   font-weight: 400;
@@ -10,10 +9,9 @@
   color: #545454;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 320px) {
   .footer__name {
-    margin: auto;
-    max-width: 282px;
+    /* margin: auto; */
     font-size: 14px;
     line-height: 17px;
   }

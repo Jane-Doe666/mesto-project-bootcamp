@@ -1,5 +1,5 @@
 .profile__name {
-  margin: 22px 24px 16px 0 ;
+  margin: 22px 24px 16px 0;
   max-width: 287px;
 
   font-style: normal;
@@ -15,12 +15,21 @@
   /* color: #FFFFFF; */
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 940px) {
   .profile__name {
-    margin: 0 0 0 46px;
     max-width: 189px;
     font-size: 27px;
     line-height: 33px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .profile__name {
+    margin: 0 0 0 46px;
+    /* max-width: 189px;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center; */
   }
 }

@@ -2,13 +2,13 @@
   margin: auto;
   max-width: 1280px;
   background: #000;
-  color: #FFF;
-  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 800px) {
   .page {
+    margin: auto;
     max-width: 320px;
   }
 }
-

@@ -12,10 +12,9 @@
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
- 
 }
 
-.popup__button-submit:hover{
+.popup__button-submit:hover {
   background-color: rgba(0, 0, 0, 0.8);
   border: none;
 }
@@ -28,4 +27,3 @@
     line-height: 17px;
   }
 }
-

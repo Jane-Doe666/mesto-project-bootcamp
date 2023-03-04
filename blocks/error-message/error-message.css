@@ -1,0 +1,16 @@
+.error-message {
+  margin: 0 auto 13px;
+  width: 358px;
+  min-height: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #ff0000;
+}
+
+.error-message:last-of-type {
+  margin-bottom: 0px;
+}

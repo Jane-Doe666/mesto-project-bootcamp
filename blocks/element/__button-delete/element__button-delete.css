@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background-image: url(../../../image/Trashtrash.svg);
+  background-image: url(/image/Trash.svg);
   background-size: contain;
   border: none;
   outline: none;
