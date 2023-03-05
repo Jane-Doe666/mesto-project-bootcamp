@@ -4,18 +4,17 @@
   align-self: center;
   min-width: 430px;
   min-height: 330px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   color: black;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 800px) {
   .popup__container {
-    margin: auto;
     min-width: 282px;
+    max-width: 282px;
     padding-left: 22px;
     padding-right: 22px;
   }
 }
-

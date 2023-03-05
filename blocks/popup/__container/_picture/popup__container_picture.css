@@ -5,10 +5,10 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 800px) {
   .popup__container_picture {
+    max-width: 800px;
     margin: 0 auto;
     object-fit: cover;
   }
 }
-

@@ -1,5 +1,5 @@
 .profile__button-edit {
-  margin: 0px 0px 16px auto ;
+  margin: 0px 0px 16px auto;
   padding: 0;
   border: 0;
   align-self: flex-end;
@@ -10,7 +10,7 @@
   background-color: black;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 800px) {
   .profile__button-edit {
     margin: 0 0 0 10px;
     max-width: 18px;

@@ -1,6 +1,6 @@
 .popup__cross-img {
   width: 100%;
   height: 100%;
-  background-image: url(/image/Close-Icon-cross.svg);
+  background-image: url(/src/image/Close-Icon-cross.svg);
   background-size: contain;
 }

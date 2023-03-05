@@ -12,5 +12,11 @@
 }
 
 .error-message:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .error-message {
+    width: 238px;
+  }
 }
