@@ -26,20 +26,19 @@ export function toggleButton(form, settings) {
 function checkValidation(form, input, settings) {
   if (input.validity.valid) {
     hideErrorMessage(input, settings);
-    toggleButton(form, settings);
   } else {
     showValidation(input, input.validationMessage, settings);
-    toggleButton(form, settings);
   }
+  toggleButton(form, settings);
 }
 
 function setEventListeners(formElement, settings) {
-  const imputsList = Array.from(
+  const inputsList = Array.from(
     formElement.querySelectorAll(settings.inputSelector)
   );
-  imputsList.forEach((imputElement) =>
-    imputElement.addEventListener("input", () => {
-      checkValidation(formElement, imputElement, settings);
+  inputsList.forEach((inputElement) =>
+    inputElement.addEventListener("input", () => {
+      checkValidation(formElement, inputElement, settings);
     })
   );
 }
