@@ -6,10 +6,4 @@ function handleOverlay(event) {
   }
 }
 
-function handleOverlayByEsc(event, popup) {
-  if (event.key === "Escape") {
-    closePopup(popup);
-  }
-}
-
-export { handleOverlay, handleOverlayByEsc };
+export { handleOverlay };

@@ -1,8 +1,13 @@
+import { openPopup } from "./utils";
 const templateCard = document
   .querySelector("#element")
   .content.querySelector(".element");
 
-export default function createCard(link, name, setPopupBigPicture) {
+const popupPicture = document.querySelector(".popup_picture");
+const popupFigcaptionName = popupPicture.querySelector(".popup__figcaption");
+const popupFigcaptionSrc = popupPicture.querySelector(".popup__figure-img");
+
+export default function createCard(link, name) {
   const newCard = templateCard.cloneNode(true);
   const newCardImg = newCard.querySelector(".element__img");
   const newCardName = newCard.querySelector(".element__name");
@@ -25,4 +30,13 @@ function addLike(e) {
 
 function deleteCard(elem) {
   elem.remove();
+}
+
+function setPopupBigPicture(element) {
+  const cardName = element.querySelector(".element__name");
+  const cardLink = element.querySelector(".element__img");
+  popupFigcaptionSrc.src = cardLink.src;
+  popupFigcaptionName.textContent = cardName.textContent;
+  popupFigcaptionSrc.alt = cardName.textContent;
+  openPopup(popupPicture);
 }

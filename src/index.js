@@ -2,7 +2,7 @@ import "./index.css";
 import enableValidation from "./components/validate.js";
 import createCard from "./components/card.js";
 import { openPopup, closePopup } from "./components/utils";
-import { handleOverlay, handleOverlayByEsc } from "./components/modal.js";
+import { handleOverlay } from "./components/modal.js";
 const popupUserInfo = document.querySelector(".popup_info");
 const popupAddСard = document.querySelector(".popup_place");
 const popupsList = document.querySelectorAll(".popup");
@@ -15,9 +15,6 @@ const popupPlaceForm = document.forms.formPlace;
 const fieldName = popupUserInfo.querySelector(".popup__field_name");
 const fieldPosission = popupUserInfo.querySelector(".popup__field_profession");
 const buttonAddPic = document.querySelector(".profile__button-add");
-const popupPicture = document.querySelector(".popup_picture");
-const popupFigcaptionName = popupPicture.querySelector(".popup__figcaption");
-const popupFigcaptionSrc = popupPicture.querySelector(".popup__figure-img");
 const pictName = popupAddСard.querySelector(".popup__field_picName");
 const pictLink = popupAddСard.querySelector(".popup__field_link");
 const buttonAddPlace = popupAddСard.querySelector(".popup__button-submit");
@@ -55,33 +52,18 @@ function handleUserInfo(evt) {
   userProfession.textContent = fieldPosission.value;
 }
 
-function setPopupBigPicture(element) {
-  const cardName = element.querySelector(".element__name");
-  const cardLink = element.querySelector(".element__img");
-  popupFigcaptionSrc.src = cardLink.src;
-  popupFigcaptionName.textContent = cardName.textContent;
-  popupFigcaptionSrc.alt = cardName.textContent;
-  openPopup(popupPicture);
-}
-
 initialCards.forEach((item) => {
-  const card = createCard(item.link, item.name, setPopupBigPicture);
+  const card = createCard(item.link, item.name);
   containerOfPictures.append(card);
 });
 
 buttonAddPic.addEventListener("click", () => {
-  buttonAddPlace.disabled = "true";
-  buttonAddPlace.classList.add("popup__button-submit_disable");
   openPopup(popupAddСard);
 });
 
 popupAddСard.addEventListener("submit", (e) => {
   e.preventDefault();
-  const newCard = createCard(
-    pictLink.value,
-    pictName.value,
-    setPopupBigPicture
-  );
+  const newCard = createCard(pictLink.value, pictName.value);
   popupPlaceForm.reset();
   containerOfPictures.prepend(newCard);
   closePopup(popupAddСard);
@@ -98,11 +80,9 @@ popupUserForm.addEventListener("submit", (evt) => {
   closePopup(popupUserInfo);
 });
 
+//переписать событие
 popupsList.forEach((popup) => {
   popup.addEventListener("mousedown", handleOverlay);
-  document.addEventListener("keydown", (evt) => {
-    handleOverlayByEsc(evt, popup);
-  });
   const buttonClosePopup = popup.querySelector(".popup__close");
   buttonClosePopup.addEventListener("click", () => {
     closePopup(popup);
